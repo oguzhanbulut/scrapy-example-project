@@ -45,7 +45,6 @@ class AstalegaleSpider(scrapy.Spider):
             yield {"sidebar-" + cc_info_title: cc_info_text}
             qq += 1
 
-
         cc_field_sections = selectorHTML.xpath('//div[@class="cc-section-info"]').extract()
         i = 0
         for cc_section in cc_field_sections:
